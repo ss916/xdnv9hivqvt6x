@@ -1,0 +1,27 @@
+proxies:
+
+- name: "🐎41-trojan"
+  type: trojan
+  server: nxnx.9394.cf
+  password: mMa3MR4Q9A3r
+  port: 443
+  udp: true
+  #sni: example.com
+  alpn:
+    - h2
+    - http/1.1
+  skip-cert-verify: false
+
+- { name: "🌏43-wss", type: vmess, server: nxnx.9394.cf, port: 2087, uuid: 9612e380-f0b9-488f-aea2-a70119ee1829, alterId: 0, cipher: none, tls: true, network: ws, ws-path: /ws/voantix/12087, ws-headers: { Host: nxnx.9394.cf } }
+- { name: "🌏42-tcp", type: vmess, server: nxnx.9394.cf, port: 44401, uuid: 9612e380-f0b9-488f-aea2-a70119ee1829, alterId: 0, cipher: auto }
+
+- { name: "CDN-1002", type: vmess, server: 1.0.0.2, port: 443, uuid: 9612e380-f0b9-488f-aea2-a70119ee1829, alterId: 0, cipher: none, tls: true, network: ws, ws-path: /ws/voantix/10080, ws-headers: { Host: www.9394.cf } }
+- { name: "CDN-1112", type: vmess, server: 1.1.1.2, port: 443, uuid: 9612e380-f0b9-488f-aea2-a70119ee1829, alterId: 0, cipher: none, tls: true, network: ws, ws-path: /ws/voantix/10080, ws-headers: { Host: www.9394.cf } }
+- { name: "CDN-1001", type: vmess, server: 1.0.0.1, port: 443, uuid: 9612e380-f0b9-488f-aea2-a70119ee1829, alterId: 0, cipher: none, tls: true, network: ws, ws-path: /ws/voantix/10080, ws-headers: { Host: www.9394.cf } }
+- { name: "CDN-1111", type: vmess, server: 1.1.1.1, port: 443, uuid: 9612e380-f0b9-488f-aea2-a70119ee1829, alterId: 0, cipher: none, tls: true, network: ws, ws-path: /ws/voantix/10080, ws-headers: { Host: www.9394.cf } }
+
+#- { name: "🌏44-trojan-wss", type: vmess, server: nxnx.9394.cf, port: 443, uuid: 9612e380-f0b9-488f-aea2-a70119ee1829, alterId: 0, cipher: none, tls: true, network: ws, ws-path: /ws/voantix/10443, ws-headers: { Host: nxnx.9394.cf } }
+#- { name: "🌏45-ss", type: ss, server: nxnx.9394.cf, port: 44421, cipher: chacha20-ietf-poly1305, password: "hh9988" }
+- { name: "🌐kcptun", type: vmess, server: 127.0.0.1, port: 44401, uuid: 9612e380-f0b9-488f-aea2-a70119ee1829, alterId: 0, cipher: none }
+
+

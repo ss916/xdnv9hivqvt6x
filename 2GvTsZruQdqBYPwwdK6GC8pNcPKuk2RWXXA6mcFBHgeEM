@@ -1,0 +1,4 @@
+proxies:
+- { name: "🇺🇸美国A",type: vmess,server:  itunes.apple.com.ray.jiyou.cloud ,port: 28888,uuid: 99DA3872-9672-97C7-4BCD-06EF1325AE87,alterId: 0,cipher: auto, network: ws}
+- { name: "🇺🇸美国B",type: vmess,server:  185.250.221.18 ,port: 80,uuid: 99DA3872-9672-97C7-4BCD-06EF1325AE87,alterId: 0,cipher: auto, network: ws}
+
